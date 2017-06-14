@@ -1,49 +1,30 @@
-//postgres library
+
 var pg = require('pg');
 
-//connect to database
-pg.connect('postgres://postgres:kabayoka123@localhost:8080/bulletinboard', function(err, client, done){
+var connectionString = 'postgres://' + process.env.POSTGRES_USER + 
+':' + process.env.POSTGRES_PASSWORD + '@localhost:8080/bulletinboard';
+
+var pgClient = new pg.Client(connectionString);
+pgClient.connect();
+
+var query = pgClient.query(`SELECT * FROM public.messages`, function(err, result){
+console.log(result.rows);
 
 
-// client.query(`insert into public.bulletinboard
-//  (title, body)
-//  values
-//  ('mafia', 'fedora')`, function(err, result) {
-//  //should print 'INSERT: 1'
-//  console.log(`${result.command}: ${result.rowCount}`);
-
-// 	done();
-// 	//close the pg pool entirely/
-// 	//this is done so our node process will exit.
-// 	pg.end();
-// });
+pgClient.end();
 
 
-// client.query(`select * from public.bulletinboard`, function(err, result){
-// 	console.log(result.rows);
-// 	done();
+});
 
-// 	pg.end();
-// });
+var now = new Date();
+var string = now.toUTCString();
+console.log(string);
 
+function convert(time){
+var recon = new Date(time);
+console.log("reconversion date is: " + recon);
+var reconvert = recon.toLocaleString([], { hour12: true});
+console.log(reconvert);
+};
 
-
-// client.query(`create TABLE public.bulletinboard
-// (id	serial primary key,
-// title	text,
-// body	text
-// )
-// WITH (
-//     OIDS = FALSE
-// )
-// TABLESPACE pg_default;`,function (err, result){
-//     	console.log("created");
-
-//     	done();
-
-//     	pg.end();
-//     });
-
-// });
-
-
+convert(string);
