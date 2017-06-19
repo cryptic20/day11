@@ -1,7 +1,6 @@
 {
   "name": "day11git",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.17.2",
@@ -24,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/cryptic20/day11/issues"
   },
-  "homepage": "https://github.com/cryptic20/day11#readme"
+  "homepage": "https://github.com/cryptic20/day11#readme",
+  "description": ""
 }
