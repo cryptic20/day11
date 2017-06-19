@@ -1,0 +1,68 @@
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    
+footer {
+
+      padding: 25px;
+      word-spacing: 20px;
+      background: transparent;
+    }
+
+img.icon{
+	opacity: .5;
+}
+a img:hover{
+	opacity: 1;
+
+}
+
+a.herokuLink{
+	text-decoration: none;
+	font-size: 30px;
+}
+
+a.herokuLink:hover{
+	text-decoration: none;
+	color: white;
+}
+/*html {
+	background-image: url("background/abstract.jpg");
+	background: no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+*/
+
+.jumbotron{
+/*	background-image: url("background/abstract.jpg");*/
+background: transparent;
+	color: #EEEBEA;
+}
+.responsive-video {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 60px; overflow: hidden;
+}
+
+body{
+	background-image : url("background/abstract.jpg");
+	background-size: cover;
+
+	
+}
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}

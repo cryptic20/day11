@@ -50,8 +50,8 @@ var form = "<form method='post' style='margin-top:10px;'><div class='form-group'
         }
 
 
-    	$('#content').append(profileImg+"<h1 id='name'>"+obj.first_name+" "+obj.last_name+"<h5 class='postDate'>"+icon+local+ update+"</h5><h3>"+obj.title+"</h3><p>"+obj.body+
-    		"</p><div class='container'><div class='row'><hr><h6>"+check+"</h6><div class='col-md-8' style='margin-left: 50px; overflow-y:scroll; max-height: 200px; width: 100%;' id='commentBelow"+obj.id+"'></div></div></div><hr>");
+    	$('#content').append(profileImg+"<h1 id='name'>"+obj.first_name+" "+obj.last_name+"<h5 class='postDate'>"+icon+" posted: "+local+ update+"</h5><h3>"+obj.title+"</h3><p>"+obj.body+
+    		"</p><div class='container'><div class='row'><hr><h6>"+check+"</h6><div class='col-md-8' style='margin-left: 50px; overflow-y:scroll; max-height: 200px; width: 80%;' id='commentBelow"+obj.id+"'></div></div></div><hr>");
         
 
         if(obj.todoItems == 0 || obj.todoItems == null){
@@ -70,7 +70,7 @@ var form = "<form method='post' style='margin-top:10px;'><div class='form-group'
             var date = new Date(comments.updatedAt);
             var time = date.toLocaleString([], { hour12: true});
 
-            $('#commentBelow'+obj.id).append("<hr>"+commentImg+"<h1 id='commentName'>"+comments.first_name+" "+comments.last_name+"</h1><h5>"+icon+time+"</h5><p>"+comments.comment+"</p>");
+            $('#commentBelow'+obj.id).append("<hr>"+commentImg+"<h1 id='commentName'>"+comments.first_name+" "+comments.last_name+"</h1><h5>"+icon+" posted: "+time+"</h5><p>"+comments.comment+"</p>");
             
             if(i+1 == obj.todoItems.length){
 

@@ -10,8 +10,8 @@ footer {
     }
 
    p {
-   	letter-spacing: 2px;
-    font-size: 15px;
+   	letter-spacing: 1px;
+    font-size: 18px;
     margin-top: 5px;
 
    }
@@ -25,22 +25,23 @@ h6{
   height: 100vh;
 
 }
-
-#commentBelow{
-  margin-left: 50px; 
-  overflow-y: scroll;
-  height: 250px;
+h5{
+  font-weight: 500;
+  font-size: 12px;
 }
+
 h1#name{
   display: inline-block;
   font-size: 20px;
   margin-left: 10px;
+  text-transform: uppercase;
 }
 
 h1#commentName{
   display: inline-block;
-  font-size: 15px;
+  font-size: 13px;
   margin-left: 10px;
+  text-transform: uppercase;
 }
 
 

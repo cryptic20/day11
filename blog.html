@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bulletin Board</title>
+  
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="app.css" rel="stylesheet">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+     <script src="app.js"></script> 
+  </head>
+  <body>
+ 
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- NAV -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <!-- <li><a href="/gallery">Gallery</a></li> -->
+        <li class="active"><a href="#">BLOG</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- NAV -->
+
+
+<div id="content" class="container">
+<!-- 
+<h3><small>RECENT POST</small></h3>
+<hr>  
+<img src="https://uwm.edu/eqi/wp-content/plugins/uwmpeople/images/profile-default.jpg" class="img-circle" height="60" width="60"><h1 id="name">John Doe</h1>
+
+
+  <h5><span class="glyphicon glyphicon-time"></span> Posted Sep 27, 2015.</h5>
+  <h3>subject</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+ -->
+
+ <!-- comment section -->
+
+<!-- <div class='row'>
+<h6>COMMENTS:</h6>
+<div class='col-md-8' style='margin-left: 50px;''>
+
+<hr> -->
+<!--  <div class="container" style="margin-left: 50px;"> -->
+<!-- <img src="https://uwm.edu/eqi/wp-content/plugins/uwmpeople/images/profile-default.jpg" class="img-circle" height="30" width="30"><h1 id="commentName">John Doe</h1>
+  <h5><span class="glyphicon glyphicon-time"></span> Posted Sep 27, 2015.</h5>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+  <hr>
+    <button class="btn btn-link" id="buttonLink" onclick="$('#under-here').toggle();">write a comment...</button> -->
+<!-- 
+<div id="under-here" style="display: none; margin-top: 30px;">
+    <form method="post">
+      <div class="form-group">
+      <input type="text" class="form-control input-sm" id="first" placeholder="First name..." required>
+      </div>
+<div class="form-group">
+     <input type="text" class="form-control input-sm" id="last" placeholder="Last name..." required>
+    </div>
+ <div class="form-group">
+    <textarea class="form-control input-sm" placeholder="Comment..." id="Textcomment" required maxlength="250" required></textarea>
+  </div>
+  <input type="submit" class="btn btn-default" style="margin-bottom: 10px;" onclick="commentPost()" >
+    </form>
+</div> -->
+
+
+
+    </div> <!-- close tag for container -->
+
+
+<!-- end comment -->
+  <hr>
+<!-- close tag for body container -->
+</div>
+
+
+
+<div class="container">
+<button type="button" class="btn btn-primary btn-lg" id="buttonPost">Write a POST</button>
+
+<form method="post" id="post">
+<div class="form-group">
+   <label for="fname">First Name</label>
+ <input type="text" class="form-control input-sm" id="fname" placeholder="First name..." required>
+</div>
+<div class="form-group">
+   <label for="lname">Last Name</label>
+ <input type="text" class="form-control input-sm" id="lname" placeholder="Last name..." required>
+</div>
+
+ <div class="form-group">
+    <label for="subject">Title</label>
+    <input type="text" class="form-control input-sm" id="subject"  placeholder="Title..." required>
+  </div>
+
+<div class="form-group">
+    <label for="body">Message:</label>
+    <textarea class="form-control" id="body" rows="5"  required></textarea>
+  </div>
+  <input type="submit" class="btn btn-default" style="margin-bottom: 10px;" onclick="register()" >
+
+</form>
+</div>
+
+
+<footer class="container-fluid text-center" style="margin-top: 30px;">
+  <p>BLOG &copy;</p>
+</footer>
+
+  </body>
+</html>
