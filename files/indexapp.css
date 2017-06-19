@@ -19,7 +19,7 @@ a img:hover{
 
 }
 h1.about{
-	color: white;
+	color: #c8cbd1;
 }
 
 a.herokuLink{
@@ -42,11 +42,12 @@ a.herokuLink:hover{
 }
 */
 span.name{
-	color: white;
-	font-size: 20px;
+	color: #c5cddb;
+	font-size: 35px;
 }
 p.info{
 	color: white;
+	font-size: 15px;
 }
 .jumbotron{
 /*	background-image: url("background/abstract.jpg");*/
